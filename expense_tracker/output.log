@@ -1,0 +1,12 @@
+qt.qpa.plugin: From 6.5.0, xcb-cursor0 or libxcb-cursor0 is needed to load the Qt xcb platform plugin.
+qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found.
+This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+Available platform plugins are: xcb, vkkhrdisplay, minimalegl, linuxfb, offscreen, eglfs, minimal, vnc, wayland-brcm, wayland-egl, wayland.
+
+Fatal Python error: Aborted
+
+Current thread 0x000075b27e2e9080 (most recent call first):
+  File "/mnt/data/work/2026/11-november/15/experiment/expense_tracker/ui_main.py", line 129 in <module>
+
+Extension modules: shiboken6.Shiboken, PySide6.QtCore, PySide6.QtGui, PySide6.QtWidgets (total: 4)

@@ -1,2 +1,4 @@
 unsloth-tmp
 .venv
+.local
+.rustup

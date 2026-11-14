@@ -111,7 +111,7 @@ class Application(QWidget):
     
     def __init__(self):
         super().__init__()
-        self.application = QApplication()
+        # QApplication is created in main block
         self.main_window = MainWindow()
         self.main_window.show()
         
@@ -125,5 +125,6 @@ class Application(QWidget):
 
 
 if __name__ == "__main__":
-    app = Application()
-    app.application.exec_()
+    from PySide6.QtWidgets import QApplication
+    app = QApplication(['--platform', 'offscreen'])
+    app.exec()
